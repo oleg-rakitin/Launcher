@@ -50,7 +50,7 @@ public final class AuthProviderPair {
     public void internalShowOAuthWarnMessage() {
         if(!warnOAuthShow) {
             if(!(core instanceof MySQLCoreProvider)) { // MySQL upgraded later
-                logger.warn("AuthCoreProvider {} ({}) not supported OAuth. Legacy session system may be removed in next release", name, core.getClass().getName());
+            //    logger.warn("AuthCoreProvider {} ({}) not supported OAuth. Legacy session system may be removed in next release", name, core.getClass().getName());
             }
             warnOAuthShow = true;
         }
